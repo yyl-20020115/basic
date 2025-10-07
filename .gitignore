@@ -15,3 +15,7 @@ CVS
 *.o
 t/test
 TODO
+/Windows/.vs/BASIC/v17
+/Windows/.vs/BASIC/FileContentIndex
+/Windows/BASIC/x64/Debug
+/Windows/x64/Debug
