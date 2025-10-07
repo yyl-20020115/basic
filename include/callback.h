@@ -6,7 +6,7 @@
 typedef struct
 error
 {
-  int error;
+	int error;
 };
 
 typedef bool (*callback)(error err, void* data);

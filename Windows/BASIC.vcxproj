@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -156,6 +156,21 @@
     <ClCompile Include="..\src\parser.c" />
     <ClCompile Include="..\src\tokenizer.c" />
     <ClCompile Include="..\src\variables.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\arch.h" />
+    <ClInclude Include="..\include\array.h" />
+    <ClInclude Include="..\include\callback.h" />
+    <ClInclude Include="..\include\dictionary.h" />
+    <ClInclude Include="..\include\error.h" />
+    <ClInclude Include="..\include\hexdump.h" />
+    <ClInclude Include="..\include\io.h" />
+    <ClInclude Include="..\include\kbhit.h" />
+    <ClInclude Include="..\include\lines.h" />
+    <ClInclude Include="..\include\parser.h" />
+    <ClInclude Include="..\include\tokenizer.h" />
+    <ClInclude Include="..\include\usingwin.h" />
+    <ClInclude Include="..\include\variables.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,13 +6,14 @@
 
 #include <stdbool.h>
 
-float evaluate(char *expression_string);
+float evaluate(char* expression_string);
 
-void evaluate_print(char *line);
+void evaluate_print(char* line);
 
-void evaluate_print_func_param( char *func, float param);
+void evaluate_print_func_param(char* func, float param);
 
 const char* evaluate_last_error(void);
+
 void clear_last_error(void);
 
 void basic_init(size_t memory_size, size_t stack_size);
@@ -23,7 +24,7 @@ void basic_register_io(basic_putchar putch, basic_getchar getch);
 
 char* basic_readline(char* prompt, char* buffer, size_t buffer_size);
 
-void basic_eval(char *line);
+void basic_eval(char* line);
 void basic_run(void);
 
 // For extensions
@@ -32,33 +33,33 @@ typedef float (*function)(float number);
 
 typedef struct
 {
-  token _token;
-  function _function;
+	token _token;
+	function _function;
 } token_to_function;
 
 typedef enum {
-  basic_function_type_keyword,
-  basic_function_type_op,
-  basic_function_type_numeric,
-  basic_function_type_string,
-  basic_function_type_print
+	basic_function_type_keyword,
+	basic_function_type_op,
+	basic_function_type_numeric,
+	basic_function_type_string,
+	basic_function_type_print
 } basic_function_type;
 
 typedef enum {
-  kind_numeric,
-  kind_string
+	kind_numeric,
+	kind_string
 } kind;
 
 typedef union {
-  float number;
-  char* string;
+	float number;
+	char* string;
 } value;
 
 typedef struct {
-  kind kind;
-  bool empty;
-  bool mallocd;
-  value value;
+	kind kind;
+	bool empty;
+	bool mallocd;
+	value value;
 } basic_type;
 
 typedef int (*function_0)(basic_type* rv);

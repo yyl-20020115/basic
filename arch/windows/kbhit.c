@@ -4,6 +4,7 @@
 //#include <sys/ioctl.h>
 //#include <termios.h>
 
-int kbhit(void) {
+int kbhit(void) 
+{
 	return getchar();
 }
